@@ -1,0 +1,14 @@
+apiVersion: 1
+
+providers:
+  - name: 'python-generated' # Or any unique name
+    orgId: 1
+    # folder: 'Generated Dashboards' # Optional: put them in a specific Grafana folder
+    type: file
+    disableDeletion: false # Set to true if you don't want Grafana to delete dashboards when the file is removed
+    editable: true # Allow UI edits if needed (but they won't save back to the file)
+    allowUiUpdates: true # Same as editable, basically. Set to false to lock dashboards.
+    updateIntervalSeconds: 10 # Key setting: How often Grafana checks the path for changes (e.g., 10 seconds)
+    options:
+      path: /etc/grafana/generated-dashboards # Path *inside* the container where JSON files will live
+      foldersFromFilesStructure: true # Set to true if you want subdirectories in the path to become Grafana folders

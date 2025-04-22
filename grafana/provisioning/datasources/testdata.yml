@@ -1,0 +1,9 @@
+apiVersion: 1
+
+# https://grafana.com/docs/grafana/latest/datasources/testdata/
+datasources:
+  - name: TestData
+    type: testdata
+    uid: randomid1
+    access: proxy
+    editable: true

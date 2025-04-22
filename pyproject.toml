@@ -1,0 +1,7 @@
+[project]
+name = "study-grafana-foundation-sdk"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "grafana_foundation_sdk==1744895533!11.6.0",
+]

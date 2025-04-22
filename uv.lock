@@ -1,0 +1,23 @@
+version = 1
+revision = 1
+requires-python = ">=3.13"
+
+[[package]]
+name = "grafana-foundation-sdk"
+version = "1744895533!11.6.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/23/b7/9794ffdd7fa6c52f0305f01c62f07355c44462f69cf6d3b00b7ce994b396/grafana_foundation_sdk-1744895533!11.6.0.tar.gz", hash = "sha256:f8a7f79a2eed01b85d6890de807e8f44f6391e73d2f8ea79227a61f3bb13d105", size = 431365 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4a/9b/6baa26b556752f92f78e9026124fe4727c3da2bf21ef63abc11ebc0baa33/grafana_foundation_sdk-1744895533!11.6.0-py3-none-any.whl", hash = "sha256:a4252c60f65464108e39a830cc8de490c663b5321a68583ddbf35cd5e862d333", size = 328838 },
+]
+
+[[package]]
+name = "study-grafana-foundation-sdk"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "grafana-foundation-sdk" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "grafana-foundation-sdk", specifier = "==1744895533!11.6.0" }]
